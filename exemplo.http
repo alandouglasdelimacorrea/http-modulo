@@ -1,0 +1,38 @@
+http://localhost:3000/cursos
+
+# GET
+
+###
+GET http://localhost:3000/cursos/2
+
+#GET POR ID 
+
+
+###
+
+POST http://localhost:3000/cursos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Java"
+}
+
+#SET
+
+###
+
+PUT http://localhost:3000/cursos/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Java OO"
+}
+
+#EDIT
+
+###
+
+DELETE http://localhost:3000/cursos/3
+
+
+
