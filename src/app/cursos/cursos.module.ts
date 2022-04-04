@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { CursosRoutingModule } from './cursos-routing.module';
 import { CursosListaComponent } from './cursos-lista/cursos-lista.component';
+import { CursoFormComponent } from './curso-form/curso-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    CursosListaComponent
+    CursosListaComponent,
+    CursoFormComponent
   ],
   imports: [
     CommonModule,
-    CursosRoutingModule
+    CursosRoutingModule,
+    ReactiveFormsModule
   ],
   exports:[
     CursosListaComponent
